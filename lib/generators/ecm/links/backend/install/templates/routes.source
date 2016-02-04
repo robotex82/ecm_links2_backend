@@ -1,0 +1,4 @@
+
+  localized do
+    mount Ecm::Links::Backend::Engine => '/backend/ecm/links'
+  end

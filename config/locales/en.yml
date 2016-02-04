@@ -1,0 +1,9 @@
+en:
+  classes:
+    ecm/links/backend/engine: 'Links'
+  ecm:
+    links:
+      backend:
+        links:
+          table:
+            visit: Open link

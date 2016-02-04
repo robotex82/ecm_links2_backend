@@ -1,0 +1,10 @@
+.well
+  = form.association :ecm_links_category
+
+.well
+  = form.input :name
+  = form.input :url
+
+.well
+  = form.input :markup_language, collection: Ecm::Links::markup_languages
+  = form.input :description, input_html: { 'data-add-editor': true, 'data-editor-syntax': form.object.markup_language }
