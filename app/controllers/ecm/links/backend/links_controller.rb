@@ -1,4 +1,4 @@
-class Ecm::Links::Backend::LinksController < Itsf::Backend::BaseController
+class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Links::Link
   end

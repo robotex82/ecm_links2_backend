@@ -1,4 +1,4 @@
-class Ecm::Links::Backend::CategoriesController < Itsf::Backend::BaseController
+class Ecm::Links::Backend::CategoriesController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Links::Category
   end
