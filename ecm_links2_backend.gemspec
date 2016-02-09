@@ -17,12 +17,11 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "> 4.0"
+  s.add_dependency "rails", ">= 4.0"
 
   s.add_dependency "ecm_links2"
   s.add_dependency "itsf_backend"
   s.add_dependency 'rails-i18n'
-  # s.add_dependency 'ransack'
   s.add_dependency 'route_translator'
   s.add_dependency 'coffee-rails'
   s.add_dependency 'jquery-rails'
