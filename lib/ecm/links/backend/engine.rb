@@ -4,7 +4,7 @@ module Ecm
       class Engine < ::Rails::Engine
         isolate_namespace Ecm::Links::Backend
 
-        initializer "ecm_links_backend.asset_pipeline" do |app|
+        initializer 'ecm_links_backend.asset_pipeline' do |app|
           app.config.assets.precompile << 'ecm_links_backend.js'
           app.config.assets.precompile << 'ecm_links_backend.css'
         end

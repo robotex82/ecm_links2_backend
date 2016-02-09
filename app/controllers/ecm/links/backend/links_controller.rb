@@ -12,6 +12,6 @@ class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseContro
   def permitted_params
     params
       .require(:ecm_links_link)
-        .permit(:ecm_links_category_id, :name, :url, :markup_language, :description)
+      .permit(:ecm_links_category_id, :name, :url, :markup_language, :description)
   end
 end

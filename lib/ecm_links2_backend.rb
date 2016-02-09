@@ -6,5 +6,5 @@ require 'rails-i18n'
 # require 'ransack'
 require 'route_translator'
 
-require "ecm/links/backend"
-require "ecm/links/backend/engine"
+require 'ecm/links/backend'
+require 'ecm/links/backend/engine'
