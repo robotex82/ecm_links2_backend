@@ -7,3 +7,6 @@ en:
         links:
           table:
             visit: Open link
+  routes:
+    mount:
+      ecm_links_backend: '/backend/links'
