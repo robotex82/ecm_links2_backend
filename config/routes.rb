@@ -1,6 +1,6 @@
 Ecm::Links::Backend::Engine.routes.draw do
-  resources :categories
-  resources :links
+  backend_resources :categories
+  backend_resources :links
 
   root to: 'home#index'
 end
