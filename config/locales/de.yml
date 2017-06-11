@@ -8,5 +8,4 @@ de:
           table:
             visit: Link öffnen
   routes:
-    mount:
-      ecm_links_backend: '/backend/links'
+    ecm-links-backend-engine: 'links'

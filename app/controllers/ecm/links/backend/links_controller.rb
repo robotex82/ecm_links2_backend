@@ -6,12 +6,12 @@ class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseContro
   private
 
   def collection_scope
-    resource_class.includes(:ecm_links_category)
+    resource_class.includes(:category)
   end
 
   def permitted_params
     params
-      .require(:ecm_links_link)
-      .permit(:ecm_links_category_id, :name, :url, :markup_language, :description)
+      .require(:link)
+      .permit(:category_id, :name, :url, :markup_language, :description)
   end
 end

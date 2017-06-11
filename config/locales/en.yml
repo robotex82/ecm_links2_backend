@@ -8,5 +8,4 @@ en:
           table:
             visit: Open link
   routes:
-    mount:
-      ecm_links_backend: '/backend/links'
+    ecm-links-backend-engine: 'links'
