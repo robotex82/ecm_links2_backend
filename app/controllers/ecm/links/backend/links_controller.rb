@@ -1,13 +1,11 @@
 class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseController
+  include Controller::RansackConcern
+
   def self.resource_class
     Ecm::Links::Link
   end
 
   private
-
-  def collection_scope
-    resource_class.includes(:category)
-  end
 
   def permitted_params
     params
