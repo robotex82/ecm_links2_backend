@@ -1,6 +1,4 @@
 class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseController
-  include Controller::RansackConcern
-
   def self.resource_class
     Ecm::Links::Link
   end
