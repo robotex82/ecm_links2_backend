@@ -1,8 +1,8 @@
-= table.column :locale
-= table.column :parent
-= table.column :name, class: 'truncate-chars truncate-chars-30'
-= table.column :short_description, class: 'truncate-chars truncate-chars-30'
-= table.column :long_description, class: 'truncate-chars truncate-chars-30'
-= table.column :link_footer_column, class: 'truncate-chars truncate-chars-30'
-= table.column :links_count
+= table.column :locale, sortable: true
+= table.column :parent, sortable: true
+= table.column :name, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :short_description, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :long_description, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :link_footer_column, sortable: true, class: 'truncate-chars truncate-chars-30'
+= table.column :links_count, sortable: true
 = table.timestamps
