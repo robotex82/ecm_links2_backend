@@ -1,4 +1,3 @@
 
   localized do
-    mount Ecm::Links::Backend::Engine, at: '/backend/ecm/links'
-  end
+    mount Ecm::Links::Backend::Engine, at: '/backend/ecm-links-backend-engine'
