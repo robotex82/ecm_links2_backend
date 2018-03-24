@@ -1,13 +1,21 @@
-class Ecm::Links::Backend::LinksController < Itsf::Backend::Resource::BaseController
-  def self.resource_class
-    Ecm::Links::Link
-  end
+module Ecm
+  module Links
+    module Backend
+      class LinksController < Itsf::Backend::Resource::BaseController
+        include ResourcesController::Sorting
 
-  private
+        def self.resource_class
+          Ecm::Links::Link
+        end
 
-  def permitted_params
-    params
-      .require(:link)
-      .permit(:category_id, :name, :url, :markup_language, :description)
+        private
+
+        def permitted_params
+          params
+            .require(:link)
+            .permit(:category_id, :name, :url, :markup_language, :description)
+        end
+      end
+    end
   end
 end
