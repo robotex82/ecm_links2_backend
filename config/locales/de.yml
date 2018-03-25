@@ -1,6 +1,9 @@
 de:
   classes:
     ecm/links/backend/engine: 'Links'
+  component:
+    collection_table:
+      visit: 'Öffnen'
   ecm:
     links:
       backend:
